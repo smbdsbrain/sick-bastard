@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  app:
+    container_name: tgbot
+    build: .
+    command: inv
+    environment:
+      - INVOKE_PROVIDER_CONFIG_HOST=mongo
+    volumes:
+      - ./invoke.yaml:/app/invoke.yaml
+    ports:
+      - 8080:8080
+
+  postgres:
+    image: postgres:
+    container_name: tgdb
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - mongo:/data/db
+
+volumes:
+  mongo:

@@ -1,0 +1,31 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = '3.6'
+
+[packages]
+invoke = "*"
+psycopg2-binary = "==2.7.5"
+SQLAlchemy = "*"
+pysocks = "*"
+jinja2= "*"
+pytz = "*"
+aiotg = "*"
+motor = "*"
+crontab = "*"
+alembic = "==0.9.5"
+markovify = "*"
+
+[dev-packages]
+pytest = "*"
+"pytest-pep8" = "*"
+"pytest-flake8" = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+pytest-env = "*"
+"pep8-naming" = "*"
+"flake8" = "*"
+"flake8-isort" = "*"

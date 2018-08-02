@@ -1,0 +1,8 @@
+*
+!sick_bastard/
+!Pipfile
+!Pipfile.lock
+!tasks.py
+!setup.cfg
+!entrypoint.sh
+!wait-for-it.sh
