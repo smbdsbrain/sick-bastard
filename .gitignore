@@ -16,3 +16,4 @@ db.json
 test_db.json
 .virtualenvs/
 invoke.yaml
+corpuses/
