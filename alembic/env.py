@@ -10,7 +10,7 @@ from sqlalchemy.engine import create_engine
 project_root = Path(__file__).parent.parent
 sys.path.append(str(project_root))
 
-from models.base import Base
+from models.storage.postgres import Base
 from models.utils import get_postgres_url
 
 config = context.config

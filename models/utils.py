@@ -1,10 +1,5 @@
 import os
 import platform
-from typing import Any, List, Union
-
-from sqlalchemy.ext.compiler import compiles
-from sqlalchemy.sql import column
-from sqlalchemy.sql.expression import FromClause
 
 
 def get_postgres_url(db_name='sick_bastard'):
