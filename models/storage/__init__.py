@@ -1,2 +1,2 @@
-from models.storage.mongo import MongoConnector  # noqa
-from models.storage.mongo import MongoConnector  # noqa
+from models.storage.mongo import MongoStorage  # noqa
+from models.storage.mongo import MongoStorage  # noqa

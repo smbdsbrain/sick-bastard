@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class BaseConnector(ABC):
+class BaseStorage(ABC):
     providers = {}
 
     @abstractmethod

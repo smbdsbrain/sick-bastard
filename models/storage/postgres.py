@@ -3,7 +3,7 @@ from markovify.splitters import split_into_sentences
 from sqlalchemy import Column, Integer, String, and_, func
 from sqlalchemy.ext.declarative import declarative_base
 
-from models.storage.base import BaseConnector
+from models.storage.base import BaseStorage
 
 Base = declarative_base()
 
@@ -34,7 +34,7 @@ class End(Base):
     vertex_id = Column(Integer,  nullable=False)
 
 
-class PostgresConnector(BaseConnector):
+class PostgresStorage(BaseStorage):
 
     def __init__(self, config):
         self.config = config
